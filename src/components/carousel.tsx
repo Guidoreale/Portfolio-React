@@ -71,20 +71,21 @@ export default function Carousel(props: Props) {
             que me han permitido adquirir experiencia en el desarrollo de sistemas, como tambien en la gestion de proyectos. Aqui algunos de ellos:
         </p>
         
-        <div style={{ opacity: loaded ? 1 : 0, transition: 'opacity 1s' }} className={loaded ? 'loaded flex flex-col md:flex-row items-center mt-10 bg-gray-800 border-solid border-gray-300 border-2 rounded  shadow-gray-700 shadow-2xl  my-10 dark:shadow-gray-500' : 'flex flex-col md:flex-row items-center mt-10 bg-gray-800 border-solid border-gray-300 border-2 rounded my-10 shadow-gray-700 dark:shadow-gray-500'} >
-            <div className="flex flex-col text-center justify-center w-70 w-full md:w-1/2">
-                <p className="text-white ml-5">
-                    {props.descripcion[selectedIndex]}
-                </p>
-                <a href={props.urls[selectedIndex]} target="_blank" className=" text-gray-300 hover:text-green-300 dark:text-gray-400">visitar proyecto</a>
-            </div>
-            <CarouselImg 
-                src={`${selectedImage}`}
-                alt="proyecto" 
-                className={ loaded ? "loaded w-70  w-full md:w-1/2" : "w-70  w-full md:w-1/2"} 
-                onLoad={() => setLoaded(true)}
-            />
-        </div>
+        <div style={{ opacity: loaded ? 1 : 0, transition: 'opacity 1s' }} className={loaded ? 'loaded flex flex-col md:flex-row items-center mt-10 bg-gray-800 border-solid border-gray-300 border-2 rounded  shadow-gray-700 shadow-2xl  my-10 dark:shadow-gray-500' : 'flex flex-col md:flex-row items-center mt-10 bg-gray-800 border-solid border-gray-300 border-2 rounded my-10 shadow-gray-700 dark:shadow-gray-500'}>
+    <div className="flex flex-col text-center justify-center w-full md:w-1/2">
+        <p className="text-white ml-5">
+            {props.descripcion[selectedIndex]}
+        </p>
+        <a href={props.urls[selectedIndex]} target="_blank" className="text-gray-300 hover:text-green-300 dark:text-gray-400">visitar proyecto</a>
+    </div>
+    <img 
+        src={selectedImage}
+        alt="proyecto" 
+        className="w-full md:w-1/2"
+        onLoad={() => setLoaded(true)}
+    />
+</div>
+
         <div className="text-left">
     
     <div className="mt-4">

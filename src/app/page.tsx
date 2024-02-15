@@ -41,13 +41,15 @@ export default function Home() {
       </Head>
       <main className=' bg-gray-300 px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
       <section className="min-h-screen flex flex-col justify-center items-center">
-        <nav className="py-10 mb-12 flex flex-wrap justify-center items-center w-full max-w-4xl">
-          <h1 className="w-full text-center text-xl font-sans dark:text-white mb-4 md:mb-0">DesarrolladoPorGuido</h1>
+        <nav className="py-10 mb-12 flex flex-wrap justify-center items-center w-full max-w-4xl md:flex-row md:justify-between">
+          <div>
+            <h1 className="w-full text-center text-xl font-sans dark:text-white mb-4 md:mb-0">DesarrolladoPorGuido</h1>
+          </div>
           <ul className="flex flex-wrap justify-center items-center w-full md:w-auto">
-            <li><a href="#sobre-mi" className="px-4 py-1 hover:text-white dark:hover:text-white">Sobre Mi</a></li>
-            <li><a href="#proyectos" className="px-4 py-1 hover:text-white dark:hover:text-white">Proyectos</a></li>
-            <li><a href="#estudios" className="px-4 py-1 hover:text-white dark:hover:text-white">Estudios</a></li>
-            <li><a href="#otros-datos" className="px-4 py-1 hover:text-white dark:hover:text-white">Otros Datos</a></li>
+            <li><a href="#sobre-mi" className="px-2 py-1 hover:text-white dark:hover:text-black dark:text-white">Sobre Mi</a></li>
+            <li><a href="#proyectos" className="px-2 py-1 hover:text-white dark:hover:text-black dark:text-white">Proyectos</a></li>
+            <li><a href="#estudios" className="px-2 py-1 hover:text-white dark:hover:text-black dark:text-white">Estudios</a></li>
+            <li><a href="#otros-datos" className="px-2 py-1 hover:text-white dark:hover:text-black dark:text-white">Otros Datos</a></li>
           </ul>
           <div className="flex justify-center items-center">
             <BsFillMoonFill className="w-8 h-8 cursor-pointer text-2xl" onClick={() => setDarkMode(!darkMode)} />
