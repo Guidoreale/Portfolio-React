@@ -9,7 +9,7 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 
 export default function Estudios() {
     return (
-        <div className='py-20 dark:text-white'> {/* Wrap the JSX elements inside a div */}
+        <div className='py-20 text-black dark:text-white'> {/* Wrap the JSX elements inside a div */}
             <h3 className='text-3xl py-1 dark:text-teal-600'>Estudios</h3>
             <Timeline position="alternate" className='py-10'>
                 <TimelineItem>

@@ -43,21 +43,21 @@ export default function Home() {
       <section className="min-h-screen flex flex-col justify-center items-center">
         <nav className="py-10 mb-12 flex flex-wrap justify-center items-center w-full max-w-4xl md:flex-row md:justify-between">
           <div>
-            <h1 className="w-full text-center text-xl font-sans dark:text-white mb-4 md:mb-0">DesarrolladoPorGuido</h1>
+            <h1 className="w-full text-center text-xl font-sans text-black dark:text-white mb-4 md:mb-0">DesarrolladoPorGuido</h1>
           </div>
           <ul className="flex flex-wrap justify-center items-center w-full md:w-auto">
-            <li><a href="#sobre-mi" className="px-2 py-1 hover:text-white dark:hover:text-black dark:text-white">Sobre Mi</a></li>
-            <li><a href="#proyectos" className="px-2 py-1 hover:text-white dark:hover:text-black dark:text-white">Proyectos</a></li>
-            <li><a href="#estudios" className="px-2 py-1 hover:text-white dark:hover:text-black dark:text-white">Estudios</a></li>
-            <li><a href="#otros-datos" className="px-2 py-1 hover:text-white dark:hover:text-black dark:text-white">Otros Datos</a></li>
+            <li><a href="#sobre-mi" className="px-2 py-1 text-black hover:text-white dark:hover:text-black dark:text-white">Sobre Mi</a></li>
+            <li><a href="#proyectos" className="px-2 py-1 text-black hover:text-white dark:hover:text-black dark:text-white">Proyectos</a></li>
+            <li><a href="#estudios" className="px-2 py-1 text-black hover:text-white dark:hover:text-black dark:text-white">Estudios</a></li>
+            <li><a href="#otros-datos" className="px-2 py-1 text-black hover:text-white dark:hover:text-black dark:text-white">Otros Datos</a></li>
           </ul>
           <div className="flex justify-center items-center">
-            <BsFillMoonFill className="w-8 h-8 cursor-pointer text-2xl" onClick={() => setDarkMode(!darkMode)} />
+            <BsFillMoonFill className="w-8 h-8 cursor-pointer text-2xl text-black dark:text-white" onClick={() => setDarkMode(!darkMode)} />
           </div>
         </nav>
         <div className="text-center p-10">
           <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">Guido Reale</h2>
-          <h3 className="text-2xl py-2 md:text-3xl dark:text-gray-400">Desarrollador De Software</h3>
+          <h3 className="text-2xl py-2 text-black md:text-3xl dark:text-gray-400">Desarrollador De Software</h3>
           <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg dark:text-gray-400">
             Estudiante de Ingeniería en Sistemas de Información. Mi objetivo es crear soluciones únicas y de calidad.
           </p>

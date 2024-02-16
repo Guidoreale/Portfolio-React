@@ -65,7 +65,7 @@ export default function Carousel(props: Props) {
     }
 
     return <>
-        <h3 className='text-3xl py-1 dark:text-teal-600'>Proyectos</h3>
+        <h3 className='text-3xl py-1 text-teal-600'>Proyectos</h3>
         <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-400'>
             A lo largo de la carrera universitaria que estoy llevando a cabo he tenido la posibilidad de realizar varios <span className='text-teal-500'>Proyectos de Software </span>
             que me han permitido adquirir experiencia en el desarrollo de sistemas, como tambien en la gestion de proyectos. Aqui algunos de ellos:

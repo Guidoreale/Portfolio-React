@@ -8,10 +8,10 @@ export default function Footer() {
                 </span>
                 <ul className="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0">
                     <li>
-                        <a href="/#sobre-mi" className="hover:underline me-4 md:me-6">Sobre mí</a>
+                        <a href="/#sobre-mi" className="hover:underline me-4 md:me-6 text-black dark:text-white">Sobre mí</a>
                     </li>
                     <li>
-                        <a id="contacto" href="mailto:realeguido1@gmail.com" className="hover:underline">Contacto</a>
+                        <a id="contacto" href="mailto:realeguido1@gmail.com" className="hover:underline text-black dark:text-white">Contacto</a>
                     </li>
                 </ul>
             </div>
